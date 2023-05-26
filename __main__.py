@@ -11,6 +11,9 @@ bucket = s3.Bucket("my-test",
     ),
 )
 
+
+
+
 bucket = s3.Bucket("my-test-2",
     website=s3.BucketWebsiteArgs(
         index_document="index.html",
