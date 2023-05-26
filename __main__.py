@@ -11,6 +11,12 @@ bucket = s3.Bucket("my-test",
     ),
 )
 
+bucket = s3.Bucket("my-test-2",
+    website=s3.BucketWebsiteArgs(
+        index_document="index.html",
+    ),
+)
+
 ownership_controls = s3.BucketOwnershipControls(
     'ownership-controls',
     bucket=bucket.id,
